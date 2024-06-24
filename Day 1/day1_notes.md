@@ -79,3 +79,23 @@ When the computer sees the double quotes around `Hello`, it thinks the string ha
 To solve this: print('She said: "Hello" and then left.')
 Alternate the use of single and double quotes.
 In Python, we can define a string (piece of text) using either a single quote or a double quote.
+You can also reverse the single and double quotes in this example and get the same thing. The point is the alternation of the type of quotes.
+
+Another option is backslashes: print("She said: \"Hello\" and then left.")
+The backslashes tell the computer to ignore the double quotes and keep them as text. It's meant to be printed exactly as it is.
+
+Examples that all work:
+
+```
+print("A 'single quote' inside a double quote")
+print('A "double quote" inside a single quote')
+print("Alternatively you can just \"escape\" the quote")
+```
+
+My example to add:
+
+```
+print('I want to quote someone like this "I\'m quoting them", and that is that.')
+```
+
+Had to use the backslash to deal with the apostrophe for `I'm`.
