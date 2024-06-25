@@ -99,3 +99,47 @@ print('I want to quote someone like this "I\'m quoting them", and that is that.'
 ```
 
 Had to use the backslash to deal with the apostrophe for `I'm`.
+
+
+### String manipulation and code intelligence
+
+Example hello world: print("Hello, world!\nHello, world!")
+
+The use of `\n` separates the lines within the same string. You don't want gaps between the `\n`, unless you are trying to add space.
+
+
+String concatenation: print("Hello" + "Angela")
+Use a `+` to combine strings.
+
+String concatenation is taking those separate strings of characters and merging them into one.
+
+**In Python programming, spaces are very important. For example, putting a tab in front of a print function produces an indentation error.**
+
+Code intelligence is a feature within Replit. I already had it turned on. It helps you understand what is going wrong with your code (for example, red squiggly line).
+
+
+### Debugging practice (string manipulation)
+
+Debug the following code to make it print like the output example:
+
+```
+# Fix the code below 👇
+
+print(Day 1 - String Manipulation")
+print("String Concatenation is done with the "+" sign.")
+  print('e.g. print("Hello " + "world")')
+print(("New lines can be created with a backslash and n.")
+```
+
+My attempt:
+
+```
+print("Day 1 - String Manipulation")
+print("String Concatenation is done with the \"+\" sign.")
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+```
+
+The tricky part was making the `"+"` part appear in the output. It also needed an opening quote in the first line, a deletion of the tab/indentation in the third line, and a deletion of one of the opening curls in the fourth line.
+
+
