@@ -143,3 +143,129 @@ print("New lines can be created with a backslash and n.")
 The tricky part was making the `"+"` part appear in the output. It also needed an opening quote in the first line, a deletion of the tab/indentation in the third line, and a deletion of one of the opening curls in the fourth line.
 
 
+### Input function
+
+Instead of using something like: print("What is your name?")
+to collect a user's name.
+
+We'll use the input function:
+
+```
+input("What is your name?")
+```
+
+When you use this function, the cursor stays active at the end of the line in the output. The program pauses to give the user the opportunity to enter their name. As opposed to print(), which just ends the execution.
+
+You can start to use the entries to the input function, like:
+
+```
+print("Hello " + input("What is your name?"))
+```
+
+This prompts the entry of the name in the console, and then outputs `Hello [name]` after the user enters the name.
+
+**To comment in Python code, add the `#` in front of the text.**
+
+### Coding exercise (input function)
+
+For Auditorium, the input function works a bit differently. You enter input() in the code, and then put the actual input in the `Input` section. For example:
+
+```
+num1 = int(input())
+num2 = int(input())
+
+print(num1 * num2)
+```
+
+Another example to work through:
+
+```
+num1 = int(input())
+num2 = int(input())
+
+print(6)
+
+Explanation:
+
+Without changing the code, try clicking submit.
+
+If a student didn't complete the coding exercise, then the extra tests should catch this.
+
+For example in this case 6 is the correct answer for the visible inputs. But behind the scenes when you submit the code we are also passing in 5 and 5.
+
+5 x 5 = 25
+
+while
+
+2 x 3 = 6
+
+So the only way for the student to pass all the tests in the evaluation is to write the correct code.
+
+This is how we ensure you're doing the right things and test your understanding of the programming concepts. It's like having a teacher next to you checking your code.
+```
+
+To fix the above, specify exactly what you want to print with the use of `num1` and `num2`:
+
+```
+num1 = int(input())
+num2 = int(input())
+
+print(num1 * num2)
+```
+
+The following are my tests with my inputs and the Auditorium outputs:
+
+```
+print("Howdy " + input() + "!")
+
+print("What is " + input() + "?")
+
+print("Answer:" + input())
+
+Inputs:
+Joe
+2 plus 2
+4!
+
+Outputs:
+Howdy Joe!
+What is 2 plus 2?
+Answer:4!
+```
+
+Final coding exercise of this lesson: 
+figure out how to pull in the inputs and calculate the number of letters in the names that I input. Code must be able to handle any name that is presented.
+
+To do this, use: numOfLetters = len("Angela")
+`len()` calculates the number of characters around any piece of text.
+
+My first attempt:
+
+```
+name = input()
+
+numOfLetters = len(name)
+
+print(numOfLetters)
+```
+
+Result: my code worked for all three test cases. Jack = output of 4. Philipp = output of 7. Ernest Hemingway = output of 16.
+My logic was basically that you have to set a constant based on the input so that you could pass that into len().
+This was the best way to ensure that, no matter which name is inputted, len() will be able to calculate the characters.
+
+Angela Yu method:
+She did it a very different way.
+
+```
+print(len(input()))
+```
+
+Her logic: first, add the input() function to bring in the input. Then, put it inside the len() function. And finally, put both inside the print() function to output the len function's calculation of the input() characters.
+
+### Variables
+
+
+
+
+
+
