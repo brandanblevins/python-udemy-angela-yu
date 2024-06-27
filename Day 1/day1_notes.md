@@ -66,7 +66,7 @@ print("5. Bake at 200 degrees C for 30 minutes.")
 
 Test case passed.
 
-Explanation: Simply need five print statements to output the five lines of the recipe.
+Explanation: Simply need five print statements with each step of the recipe marked as a string to output the five lines of the recipe.
 
 ### Print modifiers
 
@@ -350,6 +350,65 @@ print("b: " + b)
 Takeaway from Angela: variables allow you to store values like boxes when you are moving.
 
 
-### 
+### Variable naming
+
+You can basically name variables whatever you want, as long as you are consistent.
+
+There are a few rules to follow though:
+
+* Make your code readable. If you come back later and have variables named `e` or `n`, they won't have much value.
+* The name of the variable has to be a single unit. To separate words in the variable name in Python, you need to use an underscore (_).
+* Don't name variables the same thing as functions. For example, don't name a varialble `input`.
+
+
+## Day 1 Project: Band name generator
+
+The hints and final solution to start the project:
+
+```
+#1. Create a greeting for your program.
+
+#2. Ask the user for the city that they grew up in.
+
+#3. Ask the user for the name of a pet.
+
+#4. Combine the name of their city and pet and show them their band name.
+
+#5. Make sure the input cursor shows on a new line:
+
+# Solution: https://replit.com/@appbrewery/band-name-generator-end
+```
+
+Basically, you need to use everything from the day 1 lessons to create a band name generator.
+
+My first attempt:
+
+```
+print("Welcome to the band name generator")
+
+city = input("What city did you grow up in?")
+
+pet = input("What\'s the name of your pet?")
+
+band_name = (city + " " + pet)
+
+print(band_name)
+```
+
+It worked to generate the band name, but I failed on #5, making the input cursor appear on a new line.
+
+The solution:
+
+```
+print("Welcome to the Band Name Generator.")
+city = input("What's the name of the city you grew up in?\n")
+pet = input("What's your pet's name?\n")
+print("Your band name could be " + city + " " + pet)
+```
+
+A couple of things: 1) Angela cleaned up the print function so that you don't need the separate `band_name` variable; and 2) the #5 input cursor didn't work with the solution in Replit.
+
+Explanation: #5 input cursor on the new line; it's not a new line after inputting the city and pet. It's putting the cursor on a new line when inputting them, and that is solved with the use of `\n` in the solution. That creates a new line.
+
 
 
