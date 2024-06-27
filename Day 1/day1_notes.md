@@ -264,8 +264,92 @@ Her logic: first, add the input() function to bring in the input. Then, put it i
 
 ### Variables
 
+Our previous lesson on the input function:
+
+```
+input("What is your name?")
+```
+
+There wasn't a way to actually capture the input.
+
+But if you give it a name like so:
+
+```
+name = input("What is your name?")
+```
+
+You can capture it and use the print function to output the captured entry.
+
+As the name variable suggests, it can be changed. For example:
+
+```
+name = "Jack"
+
+print(name)
+
+name = "Angela"
+
+print(name)
+```
+
+Jack is printed with the first print function, but then Angela is printed with the second print function. The variable changed.
+
+### Coding exercise (variables)
+
+Instructions:
+
+```
+This program takes two inputs. The first input is stored in a variable called a. The second input is stored in a variable called b.
+
+Write a program that switches the values stored in the variables a and b.
+
+Warning . You don't need to print anything. The print statement is already in the template code. However, your program should work for different inputs. e.g. any value of a and b.
+
+Example Input 1
+29
+41
+Example Output 1
+a: 41
+b: 29
+Example Input 2
+Hello
+World
+Example Output 2
+a: World
+b: Hello
+```
+
+My first attempt was wrong. I simply tried to capture the inputs again like so:
+
+```
+b = input()
+a = input()
+```
+
+My second attempt was also wrong. You can't hard code the variables, the test cases will fail:
+
+```
+a = "41"
+b = "29"
+```
+
+The answer is to set a third variable, and then rearrange the variables now that there is a now value temporarily holding the a value.
+
+```
+a = input()
+b = input()
+
+c = a
+a = b
+b = c
+
+print("a: " + a)
+print("b: " + b)
+```
+
+Takeaway from Angela: variables allow you to store values like boxes when you are moving.
 
 
-
+### 
 
 
