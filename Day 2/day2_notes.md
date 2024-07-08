@@ -282,6 +282,7 @@ print(bmi_as_int)
 ```
 
 I still don't understand the need to convert to an integer at the end. But my logic is in line with Angela's explanation.
+The way I was using the exponent operator was wrong.
 
 ## Number manipulation and F strings in Python
 
