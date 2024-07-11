@@ -387,6 +387,147 @@ weeks = years * 52
 print(f"You have {weeks} weeks left.")
 ```
 
-##
+## Day 2 project: Tip calculator
 
+We are going to code a tip calculator that asks for the amount of the bill, the number of people contributing, and the percentage tip.
+This should be rounded to 2 decimal places.
+
+Instructions:
+```
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 👇
+```
+
+My first attempt:
+
+```
+bill_amount = input("How much was the bill?")
+
+convert_bill = round(bill_amount, 2)
+
+number_of_people = input("How many people are paying?)
+
+convert_people = int(number_of_people)
+
+tip_percentage = input("What percentage tip would you like to leave? 10, 12, or 15")
+
+convert_tip = int(tip_percentage)
+
+calculate_individual_contribution = ((convert_bill / convert_people) * 1.12)
+
+money_per_person = round(calculate_individual_contribution, 2)
+
+print(f"You should each contribute {money_per_person} to the bill. This includes the tip.")
+```
+
+Result: error; I forgot to add the closing quote to one of the input functions:
+```
+  File "main.py", line 14
+    number_of_people = input("How many people are paying?)
+                                                         ^
+SyntaxError: EOL while scanning string literal
+```
+
+Result after correcting error: another error, but this time after entering an answer for the first input:
+```
+How much was the bill?200
+Traceback (most recent call last):
+  File "main.py", line 12, in <module>
+    convert_bill = round(bill_amount, 2)
+TypeError: type str doesn't define __round__ method
+```
+
+I'm going to try to wrap the first input function in float()
+
+Result after change: the code ran through each of the inputs and deliver an answer for the output
+```
+How much was the bill? 150
+How many people are paying? 5
+What percentage tip would you like to leave? 10, 12, or 15 12
+You should each contribute 33.6 to the bill. This includes the tip.
+```
+
+My final code after some cleanup:
+```
+bill_amount = float(input("How much was the bill? "))
+
+convert_bill = round(bill_amount, 2)
+
+number_of_people = input("How many people are paying? ")
+
+convert_people = int(number_of_people)
+
+tip_percentage = input("What percentage tip would you like to leave? 10, 12, or 15 ")
+
+convert_tip = int(tip_percentage)
+
+calculate_individual_contribution = ((convert_bill / convert_people) * 1.12)
+
+money_per_person = round(calculate_individual_contribution, 2)
+
+print(f"You should each contribute {money_per_person} to the bill. This includes the tip.")
+```
+
+Angela code:
+```
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15?"))
+people = int(input("How many people to split the bill?"))
+bill_with_tip = tip / 100 * bill + bill
+bill_per_person = bill_with_tip / people
+final_amount = round(bill_per_person, 2)
+final_amount = "{:.2f}".format(bill_per_person)
+print(f"Each person should pay: {final_amount} dollars")
+```
+Output:
+```
+Welcome to the tip calculator!
+What was the total bill? $153.45
+How much tip would you like to give? 10, 12, or 15?15
+How many people to split the bill?5
+Each person should pay: 35.29 dollars
+```
+
+The reason why the amount for the original calculation is 33.6 and not 33.60 is a formatting issues, not a rounding problem.
+
+Use this code `final_amount = "{:.2f}".format(bill_per_person)` to address the formatting issue.
+
+So I did a few things wrong in my code:
+
+1. My code was inefficient. She converted data types by wrapping functions around the input function.
+2. I hard coded the tip percentage as 12% per the instructions, but she actually accounted for the different tip amounts in the calculation.
+3. I shouldn't mention the tip as a percentage because the program isn't going to run properly if the users enter the `%` symbol.
+
+
+Angela final solution:
+```
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Round the result to 2 decimal places.
+print("Welcome to the tip calculator!")
+bill = float(input("What was the total bill? $"))
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill?"))
+
+tip_as_percent = tip / 100
+total_tip_amount = bill * tip_as_percent
+total_bill = bill + total_tip_amount
+bill_per_person = total_bill / people
+final_amount = round(bill_per_person, 2)
+
+
+# FAQ: How to round to 2 decimal places?
+
+# Find the answer in the Q&A here: https://www.udemy.com/course/100-days-of-code/learn/lecture/17965132#questions/13315048
+
+
+print(f"Each person should pay: ${final_amount}")
+```
 
