@@ -286,5 +286,107 @@ The way I was using the exponent operator was wrong.
 
 ## Number manipulation and F strings in Python
 
+**Number manipulation**
+
+Use the round() function to round numbers.
+
+The code `print(round(8 / 3))` turns into `3`.
+
+You can also specify the number of digits to round it to. 
+
+The code `print(round(8 / 3, 2))` turns into `2.67`. The `, 2` tells the system to round to two digits.
+
+Use `//` to do division based on rounding. This turns the number into an integer, whereas the single division sign delivers a floating point number.
+
+The code `print(round(8 // 3)` turns into `2` without having to conver it into an integer.
+
+If you save a calculation as a variable, you can continue to perform operations.
+
+```
+result = 4 / 2
+result /= 2
+print(result)
+```
+Delivers `1.0` as the result.
+
+Another example:
+
+```
+score = 0
+score += 1
+print(score)
+```
+Delivers `1` as the result.
+
+This is useful when you have to manipulate a value based on a previous value.
+
+**F strings**
+
+Instead of taking a bunch of different data types and combining them with plus signs, you can use an f-string.
+
+Add an f in front of the string.
+
+Example:
+```
+score = 0
+height = 1.8
+isWinning = True
+
+f"Your score is {score}"
+```
+Delivers `Your score is 0`. you can add the other variables inside the same string without having to do the " " + " " stuff.
+
+## Coding exercise (life in weeks; f-strings and mathematical operations)
+
+Instructions:
+```
+I was reading this article by Tim Urban - Your Life in Weeks and realised just how little time we actually have.
+
+Create a program using maths and f-Strings that tells us how many weeks we have left, if we live until 90 years old.
+
+It will take your current age as the input and output a message with our time left in this format:
+
+You have x weeks left.
+Where x is replaced with the actual calculated number of weeks the input age has left until age 90.
+
+Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.
+
+Example Input
+56
+Example Output
+You have 1768 weeks left.
+```
+
+Starting code:
+```
+age = input()
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+```
+
+My first attempt:
+```
+age_integer = int(age)
+
+age_in_weeks = age_integer * 52
+
+total_weeks = 90 * 52
+
+weeks_left = total_weeks - age_in_weeks
+
+print(f"You have {weeks_left} weeks left.")
+```
+
+Result: Delivers the output `You have 3900 weeks left` for the input `15`. My code passes all three test cases.
+
+Angela got there in a more efficient way:
+```
+years = 90 - int(age)
+weeks = years * 52
+
+print(f"You have {weeks} weeks left.")
+```
+
+##
 
 
