@@ -124,6 +124,40 @@ Refer to this graphic for help:
 My attempt:
 
 ```
+weight = 85
+height = 1.85
 
+bmi = weight / (height ** 2)
+
+# 🚨 Do not modify the values above
+# Write your code below 👇
+
+if bmi < 18.5:
+    print("underweight")
+elif bmi >= 25:
+    print("overweight")
+else:
+    print("normal weight")
+```
+
+My code passed the test on the first attempt.
+
+
+## Multiple `if` statements in succession
+
+Example flow chart: https://viewer.diagrams.net/?target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Rollercoaster%204#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1aoRTeFOb2SJO7ofMnhTCneCEboHowF2A%26export%3Ddownload#%7B%22pageId%22%3A%22bzYDor7Mf7Ch-uxfBpj_%22%7D
+
+Use multiple `if` statements to check whether each condition is true. This is unlike an `elif` where only one option will be carried out.
 
 ```
+if condition 1:
+    do A
+if condition 2:
+    do B
+if condition 3:
+    do C
+```
+
+*Watch the indentation*
+Note again that indentation is going to matter greatly to the example being built.
+
