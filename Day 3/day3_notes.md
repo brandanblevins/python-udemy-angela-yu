@@ -40,3 +40,22 @@ Indentation is important for an `if / else` in Python. It needs to follow the fo
 *Important equal sign callout*
 One `=` sign means you're assigning value to a variable. When you have two `==` signs, you are checking whether the values are equal.
 
+
+You can use `>` and `<` in combination with `=` to indicate greater/less than or equal to.
+
+## Modulo operator
+
+What is the modulo operator? It looks like the `%` sign, but it's not. It goes between two numbers, so a binary operator, and it works out what is the remainder after division.
+
+```
+10 % 5
+```
+
+This works as `10 divided by 5 = 2`.
+
+
+```
+10 % 3
+```
+This works out to be `1`, because that's what is remaining after the division.
+
