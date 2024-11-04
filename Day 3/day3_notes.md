@@ -74,3 +74,18 @@ else:
     do this
 ```
 
+Example flow chart: https://viewer.diagrams.net/?target=blank&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Rollercoaster%202#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1XaUDMIKOxCUzJbsuZevgHZmgKr7rICbI%26export%3Ddownload#%7B%22pageId%22%3A%22bzYDor7Mf7Ch-uxfBpj_%22%7D
+
+
+### Elif
+
+You can add as many `elif` conditions as you want.
+
+```
+if condition1:
+    do this
+elif condition2:
+    do this
+else:
+    do this
+```
