@@ -59,3 +59,18 @@ This works as `10 divided by 5 = 2`.
 ```
 This works out to be `1`, because that's what is remaining after the division.
 
+
+## Nested `if` statements and `elif` statements
+
+Use a nested `if / else` statement, once the first condition has passed, we can check for another condition. And then we can have another if/else statement inside.
+
+```
+if condition:
+    if another condition:
+        do this
+    else:
+        do this
+else:
+    do this
+```
+
