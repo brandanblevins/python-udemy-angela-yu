@@ -18,7 +18,7 @@ if add_pepperoni == "y":
     if size == "s":
         bill += 2
     else:
-        bill += 1
+        bill += 3
 else:
     bill += 0
 
