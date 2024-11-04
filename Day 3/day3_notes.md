@@ -166,6 +166,24 @@ Note again that indentation is going to matter greatly to the example being buil
 
 See file leapyear.py for my attempt.
 
+Angela did this in a much cleaner manner with nested if/else statements:
+
+```
+# Which year do you want to check?
+year = int(input())
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year")
+    else:
+      print("Not leap year")
+  else:
+    print("Leap year")
+else:
+  print("Not leap year")
+```
+
 Instructions:
 
 ```
@@ -212,3 +230,42 @@ Example Output 2
 
 ## Coding challenge: Pizza order practice
 
+
+Instructions:
+
+```
+Congratulations, you've got a job at Python Pizza! Your first job is to build an automatic pizza order program.
+
+Based on a user's order, work out their final bill.
+
+Small pizza (S): $15
+
+Medium pizza (M): $20
+
+Large pizza (L): $25
+
+Add pepperoni for small pizza (Y or N): +$2
+
+Add pepperoni for medium or large pizza (Y or N): +$3
+
+Add extra cheese for any size pizza (Y or N): +$1
+
+Example Input
+L
+Y
+N
+Example Output
+Thank you for choosing Python Pizza Deliveries!
+Your final bill is: $28.
+```
+
+Starting code:
+
+```
+print("Thank you for choosing Python Pizza Deliveries!")
+size = input() # What size pizza do you want? S, M, or L
+add_pepperoni = input() # Do you want pepperoni? Y or N
+extra_cheese = input() # Do you want extra cheese? Y or N
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+```
