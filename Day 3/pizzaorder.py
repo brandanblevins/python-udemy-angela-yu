@@ -7,30 +7,32 @@ extra_cheese = input("Do you want extra cheese? Enter: Y or N ") # Do you want e
 
 bill = 0
 
-if size == s:
-    if extra_cheese == y:
-        if add_pepperoni == y:
+if size == "s":
+    if extra_cheese == "y":
+        if add_pepperoni == "y":
             bill += 18
-    elif extra_cheese == n:
-        if add_pepperoni == y:
+    elif extra_cheese == "n":
+        if add_pepperoni == "y":
             bill += 17
     else:
         bill += 15
-elif size == m:
-    if extra_cheese == y:
-        if add_pepperoni == y:
+elif size == "m":
+    if extra_cheese == "y":
+        if add_pepperoni == "y":
             bill += 24
-    elif extra_cheese == n:
-        if add_pepperoni == y:
+    elif extra_cheese == "n":
+        if add_pepperoni == "y":
             bill += 23
     else:
         bill += 20
 else:
-    if extra_cheese == y:
-        if add_pepperoni == y:
+    if extra_cheese == "y":
+        if add_pepperoni == "y":
             bill += 29
-    elif extra_cheese == n:
-        if add_pepperoni == y:
+    elif extra_cheese == "n":
+        if add_pepperoni == "y":
             bill += 28
     else:
         bill += 25
+
+print(f"Thank you for choosing Python Pizza Deliveries! Your final bill is: ${bill}.")
