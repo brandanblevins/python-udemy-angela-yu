@@ -7,22 +7,22 @@ extra_cheese = input("Do you want extra cheese? Enter: Y or N ") # Do you want e
 
 bill = 0
 
-if size == "s":
+if size == "S":
     bill += 15
-elif size == "m":
+elif size == "M":
     bill += 20
 else:
     bill += 25
 
-if add_pepperoni == "y":
-    if size == "s":
+if add_pepperoni == "Y":
+    if size == "S":
         bill += 2
     else:
         bill += 3
 else:
     bill += 0
 
-if extra_cheese == "y":
+if extra_cheese == "Y":
     bill += 1
 else:
     bill += 0
