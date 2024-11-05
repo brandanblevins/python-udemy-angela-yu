@@ -1,14 +1,15 @@
 print("Welcome to Treasure Island! Your mission is to find the treasure.")
 
-left_or_right = str(input("Do you want to take the left path or the right path? Type left or right: "))
+choice1 = input('Do you want to take the left path or the right path? Type "left" or "right": ').lower()
 
-if left_or_right == "left":
-    swim_or_wait = str(input("Good choice! Now, do you want to swim across the lake or wait here? Type swim or wait: "))
+if choice1 == "left":
+    # Continue in the game.
+    choice2 = input('Good choice! Now, do you want to swim across the lake or wait here? Type "swim" or "wait": ').lower()
 else:
     print("You fell into a hole! GAME OVER!")
 
-if swim_or_wait == "wait":
-    choose_door = str(input("Another good choice! Very wise. Now, which door do you want to take? Type red, blue, yellow: "))
+if choice2 == "wait":
+    choice3 = input("Another good choice! Very wise. Now, which door do you want to take? Type red, blue, yellow: ").lower()
 else:
     print("You've been attacked by a giant killer trout! GAME OVER")
 
