@@ -5,16 +5,10 @@ choice1 = input('Do you want to take the left path or the right path? Type "left
 if choice1 == "left":
     # Continue in the game.
     choice2 = input('Good choice! Now, do you want to swim across the lake or wait here? Type "swim" or "wait": ').lower()
-else:
-    print("You fell into a hole! GAME OVER!")
-
-if choice2 == "wait":
-    choice3 = input("Another good choice! Very wise. Now, which door do you want to take? Type red, blue, yellow: ").lower()
-else:
-    print("You've been attacked by a giant killer trout! GAME OVER")
-
-if choose_door == "red":
-    print("You've been roasted by the flaming fire of doom! GAME OVER" '''
+    if choice2 == "wait":
+        choice3 = input("Another good choice! Very wise. Now, which door do you want to take? Type red, blue, yellow: ").lower()
+        if choice3 == "red":
+            print("You've been roasted by the flaming fire of doom! GAME OVER" '''
                    (  .      )
            )           (              )
                  .  '   .   '  .  '  .
@@ -22,8 +16,8 @@ if choose_door == "red":
          .' ) ( . )    ,  ( ,     )   ( .
       ). , ( .   (  ) ( , ')  .' (  ,    )
      (_,) . ), ) _) _,')  (, ) '. )  ,. (' ) ''')
-elif choose_door == "blue":
-    print("You've been eaten by the beasts of the dark forest! GAME OVER" '''
+        elif choice3 == "blue":
+            print("You've been eaten by the beasts of the dark forest! GAME OVER" '''
                                             ___.-----.______
                                    ___.-----'::::::::::::::::`---.___
                 _.--._            (:::;,-----'~~~~~`----::::::::::.. `-.
@@ -44,8 +38,8 @@ elif choose_door == "blue":
      !|       `                                              ~~~
   ~~~~~~~~
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ''')
-elif choose_door == "yellow":
-    print("You are the wisest player yet! Congratulations on successfully completing your noble quest!" '''
+        elif choice3 == "yellow":
+            print("You are the wisest player yet! Congratulations on successfully completing your noble quest!" '''
                   *
              / \
             /___\
@@ -59,8 +53,8 @@ elif choose_door == "yellow":
           / *  *  \
          /   *  *  \
         / *_  *  _  \   ''')
-else:
-    print("You don't understand the game! GAME OVER" '''
+        else:
+            print("You don't understand the game! GAME OVER" '''
          _______________,,.
     /_____________.;;'/|
    |"____  _______;;;]/
@@ -95,3 +89,7 @@ __________________________f|   | |
 | ||                    | ||
 | ||                    | ||
 | |                     | | ''')
+    else:
+        print("You've been attacked by a giant killer trout! GAME OVER")
+else:
+    print("You fell into a hole! GAME OVER!")
