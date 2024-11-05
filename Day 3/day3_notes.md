@@ -310,6 +310,9 @@ else:
 Answer: B
 
 
+# Day 3 project: Treasure Island
+
+Basically create a game using the flowchart that I've uploaded to this folder. 
 
 
 
