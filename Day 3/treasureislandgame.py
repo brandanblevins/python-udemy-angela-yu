@@ -12,3 +12,11 @@ if swim_or_wait == "wait":
 else:
     print("You've been attacked by a giant killer trout! GAME OVER")
 
+if choose_door == "red":
+    print("You've been roasted by the flaming fire of doom! GAME OVER")
+elif choose_door == "blue":
+    print("You've been eaten by the beasts of the dark forest! GAME OVER")
+elif choose_door == "yellow":
+    print("You are the wisest player yet! Congratulations on successfully completing your noble quest!")
+else:
+    print("You don't understand the game! GAME OVER")
