@@ -9,16 +9,17 @@ if choice1 == "left":
         choice3 = input('Another good choice! Very wise. Now, which door do you want to take? Type "red", "blue", "yellow": ').lower()
         if choice3 == "red":
             print("You've been roasted by the flaming fire of doom! GAME OVER" '''
-                   (  .      )
+                           (  .      )
            )           (              )
                  .  '   .   '  .  '  .
         (    , )       (.   )  (   ',    )
          .' ) ( . )    ,  ( ,     )   ( .
       ). , ( .   (  ) ( , ')  .' (  ,    )
-     (_,) . ), ) _) _,')  (, ) '. )  ,. (' ) ''')
+     (_,) . ), ) _) _,')  (, ) '. )  ,. (' )
+            ''')
         elif choice3 == "blue":
             print("You've been eaten by the beasts of the dark forest! GAME OVER" '''
-                                            ___.-----.______
+                                                         ___.-----.______
                                    ___.-----'::::::::::::::::`---.___
                 _.--._            (:::;,-----'~~~~~`----::::::::::.. `-.
    _          .'_---. `--.__       `~~'                 `~`--.:::::`..  `..
@@ -37,10 +38,10 @@ if choice1 == "left":
     {()}      ,     ~~~                  ~~~~~~~~           /___.---'  --__
      !|       `                                              ~~~
   ~~~~~~~~
- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ''')
+            ''')
         elif choice3 == "yellow":
             print("You are the wisest player yet! Congratulations on successfully completing your noble quest!" '''
-                  *
+                          *
              / \
             /___\
            ( o o )            * *
@@ -52,10 +53,11 @@ if choice1 == "left":
            /     \
           / *  *  \
          /   *  *  \
-        / *_  *  _  \   ''')
+        / *_  *  _  \ 
+            ''')
         else:
             print("You don't understand the game! GAME OVER" '''
-         _______________,,.
+                 _______________,,.
     /_____________.;;'/|
    |"____  _______;;;]/
    | || //'         ;
@@ -88,7 +90,8 @@ __________________________f|   | |
 | ||                    | ||
 | ||                    | ||
 | ||                    | ||
-| |                     | | ''')
+| |                     | |
+            ''')
     else:
         print("You've been attacked by a giant killer trout! GAME OVER")
 else:
