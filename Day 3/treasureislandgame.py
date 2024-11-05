@@ -6,7 +6,7 @@ if choice1 == "left":
     # Continue in the game.
     choice2 = input('Good choice! Now, do you want to swim across the lake or wait here? Type "swim" or "wait": ').lower()
     if choice2 == "wait":
-        choice3 = input("Another good choice! Very wise. Now, which door do you want to take? Type red, blue, yellow: ").lower()
+        choice3 = input('Another good choice! Very wise. Now, which door do you want to take? Type "red", "blue", "yellow": ').lower()
         if choice3 == "red":
             print("You've been roasted by the flaming fire of doom! GAME OVER" '''
                    (  .      )
