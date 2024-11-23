@@ -12,7 +12,7 @@ print()
 Input function:
 input()
 
-Length function (calculaters the number of characters):
+Length function (calculates the number of characters):
 len()
 
 Data typing function (figure out the data type; you can also do things like int() to convert data types):
